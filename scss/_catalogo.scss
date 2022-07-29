@@ -1,0 +1,137 @@
+.cajaCuentasShopping {
+    display: hidden;
+}
+
+main {
+
+    .tituloCatalogo {
+        text-align: center;
+    }
+
+    .catalogoContainer {
+        margin: 0 auto;
+        margin-top: 5rem;
+        margin-bottom: 25rem;
+        width: 1700px;
+        height: 800px;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-content: space-around;
+    }
+
+    .productosContenedores {
+        width: 150px;
+        height: 150px;
+        border: 1px solid red;
+        margin: 3rem;
+    }
+
+    .tituloProductos {
+        color: white;
+    }
+
+    .contieneProductos {
+        display: inline-flex;
+        padding: 1rem;
+        flex-direction: column;
+        height: 16rem;
+        width: 14rem;
+        margin: 3rem;
+        margin-bottom: 5rem;
+        border: 3px solid #DE6C08;
+        border-radius: 30%;
+        box-shadow: 0 0 15px black;
+        &:hover {
+            color: red;
+        }
+
+        .imagenesProductos {
+            margin: 0 auto;
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+        }
+
+        .producto {
+            color: white;
+            text-align: center;
+        }
+
+        .btnAgregar {
+            margin: 0 auto;
+            margin-top: 0.5rem;
+            padding: 5px;
+            border-radius: 5px;
+            position: relative;
+            width: 50px;
+            background-color: #DE6C08;
+            color: white;
+            border: none;
+            cursor: pointer;
+            &:hover {
+                background-color: white;
+                color: #DE6C08;
+                transition: 0.5s;
+            }   
+        }
+
+        img {
+             width: 100px;
+             height: 100px;
+             object-fit: contain;
+        }
+    }
+
+
+}
+
+.alert {
+    color: #DE6C08;
+}
+
+.alertcc {
+    border: 1px solid #DE6C08;
+}
+
+@media screen and (max-width: 768px) {
+
+    .cajaCuentasShopping {
+        display: flex;
+        position: absolute;
+        top: 30px;
+        left: 220px;
+        right: 100px;
+
+        i{
+            color: #DE6C08;
+            font-size: 22px;
+            padding: 8px;
+        }
+
+        .lineaMedia {
+            height: 25px;
+            position: relative;
+            top: 5px;
+        }
+    }
+    .upright {
+        display: none;
+    }
+
+    .mainCatalogo {
+        margin-bottom: 3000px;
+
+        .catalogoContainer {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            margin-top: 900px;
+            height: 100%;
+            width: 100%;
+            position: relative;
+            left: 10px;
+            top: 500px;
+        }
+    }
+
+}
